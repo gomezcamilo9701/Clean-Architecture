@@ -11,7 +11,7 @@ namespace CleanArchitecture.Data
         */
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data source=localhost\sqlserver; Inital Catalog=Streamer;Integrated Security=True");
+            optionsBuilder.UseSqlServer(@"Data Source=localhost\sqlserver; Initial Catalog=Streamer;Integrated Security=True");
         }
         public DbSet<Streamer>? Streamers { get; set; }
         public DbSet<Video>? Videos { get; set; }
